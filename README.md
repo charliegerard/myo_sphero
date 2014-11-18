@@ -1,7 +1,7 @@
 #Experiment using the Myo Armband to control the Sphero robotic ball.
 
 ![myo](http://www.hobbr.com/wp-content/uploads/2014/02/Myo-gesture-control-armband-1-300x282.jpg)
-<img src="http://orbotix.wpengine.netdna-cdn.com/wp-content/uploads/sphero-mark-reg1.jpg" width="200px">
+<img src="http://orbotix.wpengine.netdna-cdn.com/wp-content/uploads/sphero-mark-reg1.jpg" width="200px"; margin-top="-50px">
 
 ####To run this app, follow these steps:
 
