@@ -1,0 +1,32 @@
+{
+    "name": "myo-sphero",
+    "version": "1.0",
+    "private": true,
+    "description": "Experiment using the Myo armband to control the Sphero robotic ball",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "author": "Charlie Gerard <charlie.a.gerard@gmail.com>",
+    "license": "MIT License",
+    "dependencies": {
+        "spheron": "0.0.3",
+        "express": "4.4.5",
+        "myo": "1.1.0",
+        "ws": "0.4.32"
+    },
+    "devDependencies": {},
+    "keywords": [
+        "sphero",
+        "spheron",
+        "motion",
+        "nodebot",
+        "nodebots",
+        "myo",
+        "myojs"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/charliegerard/myo_sphero"
+    }
+}
