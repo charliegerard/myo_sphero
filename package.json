@@ -1,7 +1,6 @@
 {
     "name": "myo-sphero",
     "version": "1.0",
-    "private": true,
     "description": "Experiment using the Myo armband to control the Sphero robotic ball",
     "main": "app.js",
     "scripts": {
@@ -23,7 +22,9 @@
         "nodebot",
         "nodebots",
         "myo",
-        "myojs"
+        "myojs",
+        "node",
+        "nodejs"
     ],
     "repository": {
         "type": "git",
