@@ -1,6 +1,6 @@
 module.exports = function() {
 
-  var Leap = require('leapjs');
+  // var Leap = require('leapjs');
   var spheron = require('spheron');
   var myo = require('myo');
 
@@ -50,12 +50,18 @@ module.exports = function() {
     })
 
     myo.on('fingers_spread', function(edge){
+      console.log('BACKWARD');
+      myo.requestBluetoothStrength();
+      sphero.roll(70, 180, 1);
+    })
+
+    myo.on('rest', function(){
       console.log('STOP');
       if(!edge) return;
       // myo.vibrate();
       stopSphero(sphero);
       ball.setRGB(spheron.toolbelt.COLORS.WHITE).setBackLED(255);
-    });
+    })
   };
 
   var stopSphero = function(sphero) {
