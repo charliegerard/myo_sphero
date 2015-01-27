@@ -1,6 +1,6 @@
 {
     "name": "myo-sphero",
-    "version": "1.0",
+    "version": "1.0.0",
     "description": "Experiment using the Myo armband to control the Sphero robotic ball",
     "main": "app.js",
     "scripts": {
