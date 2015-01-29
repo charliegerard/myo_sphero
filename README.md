@@ -34,6 +34,6 @@ You should see a message in your terminal when the Sphero is connected but it ma
 
 ##Next steps:
 
-* The 'thumb to pinky' gesture does not seem to be picked up by my Myo but once I fix this, I should apply it to a direction of the Sphero.
+* Create custome gestures?
 
 
