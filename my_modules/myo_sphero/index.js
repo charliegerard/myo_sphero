@@ -18,28 +18,26 @@ module.exports = function() {
 
   var safeMode = true;
 
+  myo.unlock();
+
   var controlSphero = function(sphero) {
     myo.on('wave_out', function(){
-      myo.setLockingPolicy();
       console.log('RIGHT');
       sphero.heading = 90;
       sphero.roll(70, 90, 1);
     })
 
     myo.on('wave_in', function(){
-      myo.setLockingPolicy();
       console.log('LEFT!');
       sphero.roll(70, 270, 1); //Heading is expressed in degrees so 270 will make the ball move to the left.
     })
 
     myo.on('fist', function(){
-      myo.setLockingPolicy();
       console.log('FORWARD');
       sphero.roll(70, 0, 1);
     })
 
     myo.on('fingers_spread', function(edge){
-      myo.setLockingPolicy();
       // console.log('BACKWARD');
       // sphero.roll(70, 180, 1);
       ball.setRGB(spheron.toolbelt.COLORS.WHITE).setBackLED(100);
