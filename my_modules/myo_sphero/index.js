@@ -14,7 +14,7 @@ module.exports = function() {
   })
 
   // Set this to the device Sphero connects as on your computer.
-  var device = '/dev/tty.Sphero-RBR-AMP-SPP';
+  var device = sphero('/dev/tty.Sphero-RBR-AMP-SPP');
 
   var safeMode = true;
 
@@ -51,13 +51,14 @@ module.exports = function() {
     //   stopSphero(sphero);
     //   ball.setRGB(spheron.toolbelt.COLORS.WHITE).setBackLED(255);
     // })
-  // };
+  };
 
   var stopSphero = function(spheroBall) {
     spheroBall.roll(0,spheroBall.heading||0,0);
   };
 
   console.log("waiting for Sphero connection...");
+
   device.connect(function() {
     console.log('connected to Sphero');
   //     ball.setRGB(spheron.toolbelt.COLORS.PURPLE).setBackLED(255);
