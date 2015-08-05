@@ -34,6 +34,6 @@ You should see a message in your terminal when the Sphero is connected but it ma
 
 ##Next steps:
 
-* Create custome gestures?
+* Create custom gestures?
 
 
