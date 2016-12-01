@@ -14,7 +14,7 @@ module.exports = function() {
   })
 
   // Set this to the port of your Sphero on your computer.
-  var device = sphero('/dev/tty.Sphero-RBR-AMP-SPP');
+  var device = sphero('/dev/tty.Sphero-RBR-AMP-SPP-1');
 
   var safeMode = true;
 
