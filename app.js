@@ -6,8 +6,10 @@ var app = express();
 var lab = require('./my_modules/myo_sphero');
 lab();
 
-app.listen(3001);
-console.log("Server running on port 3001");
+app.listen(3001, function() {
+    console.log("Server running on port 3001");    
+});
+
 
 
 
