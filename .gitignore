@@ -1,4 +1,1 @@
-/node_modules/.bin
-/node_modules/express
-/node_modules/spheron
-/node_modules/ws
+node_modules/

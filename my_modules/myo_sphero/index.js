@@ -3,7 +3,9 @@ module.exports = function() {
   var sphero = require("sphero");
   var myo = require('myo');
 
-  myo = Myo.create();
+  // myo = Myo.create();
+
+  myo.connect('com.charliegerard.test', require('ws'));
 
   myo.on('arm_recognized', function(){
     console.log('good!', this.id);
@@ -18,7 +20,7 @@ module.exports = function() {
 
   var safeMode = true;
 
-  myo.unlock();
+  // myo.unlock();
 
   var controlSphero = function(spheroBall) {
     myo.on('wave_out', function(){
